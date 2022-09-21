@@ -132,3 +132,142 @@
                   <div class="text-gray-500 text-center mb-3 font-bold" data-aos="zoom-out">
                     <small>Masukkan nilai IPK anda!</small>
                   </div>
+                  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" >
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="nilai"
+                        >Nilai</label
+                      ><input data-aos="zoom-out"
+                        type="text"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                        placeholder="nilai"
+                        style="transition: all 0.15s ease 0s;" id="nilai" name ="nilai"
+                      />
+                    </div>
+
+                    <?php
+
+if (isset($_POST['register'])) {
+    $nilai = $_POST ['nilai'];
+    if($nilai >= 3.75){
+        echo "<h3>Nilai anda : A</h3>";
+    }elseif ($nilai >= 3.24 and $nilai <= 3.74 ){
+      echo "<h3>Nilai anda : B+</h3>";
+    }elseif ($nilai >= 2.74 and $nilai <= 3.24 ){
+        echo "<h3>Nilai anda : B</h3>";
+    } elseif ($nilai >= 2.25 and $nilai <= 2.74 ){
+        echo "<h3>Nilai anda : C+</h3>";
+    } elseif ($nilai >= 1.75 and $nilai <= 2.24 ){
+        echo "<h3>Nilai anda : C</h3>";
+    } elseif ($nilai >= 1.25 and $nilai <= 1.74 ){
+        echo "<h3>Nilai anda : D+</h3>";
+    } elseif ($nilai >= 0.75 and $nilai <= 1.24 ){
+        echo "<h3>Nilai anda : D</h3>";
+    } elseif ($nilai <= 0.75 ){
+        echo "<h3>Nilai anda : E</h3>";
+    }   
+}
+
+?>
+                    
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
+                        type="submit"
+                        style="transition: all 0.15s ease 0s;" name="register"
+                        data-aos="zoom-out"
+                      >
+                        Hasil
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="flex flex-wrap mt-6">
+                <div class="w-1/2">
+                  <a href="" class="text-gray-300"
+                    ><small>Forgot password?</small></a
+                  >
+                </div>
+                <div class="w-1/2 text-right">
+                  <a href="" class="text-gray-300"
+                    ><small>Create new account</small></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="absolute w-full bottom-0 bg-gray-900 pb-6">
+          <div class="container mx-auto px-4">
+            <hr class="mb-6 border-b-1 border-gray-700" />
+            <div
+              class="flex flex-wrap items-center md:justify-between justify-center"
+            >
+              <div class="w-full md:w-4/12 px-4">
+                <div class="text-sm text-white font-semibold py-1">
+                  Copyright © 2021
+                  <a
+                    href=""
+                    class="text-white hover:text-gray-400 text-sm font-semibold py-1"
+                    >Kelompok 3 PAW</a
+                  >
+                </div>
+              </div>
+              <div class="w-full md:w-8/12 px-4">
+                <ul
+                  class="flex flex-wrap list-none md:justify-end  justify-center"
+                >
+                  <li>
+                    <a
+                      href=""
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >Creative Tim</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
+                      >MIT License</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
+ 
+
+
+
+
