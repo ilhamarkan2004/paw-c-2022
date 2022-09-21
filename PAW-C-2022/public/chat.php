@@ -65,6 +65,7 @@ function loginForm()
     </form>
   </div>';
 }
+
 ?>  
 <style>
     p{
