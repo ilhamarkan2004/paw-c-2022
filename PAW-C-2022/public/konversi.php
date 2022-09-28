@@ -90,7 +90,6 @@
                 ><span class="lg:hidden inline-block ml-2">Star</span></a
               >
             </li>
-
             <li class="flex items-center">
               <a href="register.php">
               <button
@@ -143,6 +142,7 @@
                         class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                         placeholder="nilai"
                         style="transition: all 0.15s ease 0s;" id="nilai" name ="nilai"
+                        required
                       />
                     </div>
 
@@ -166,7 +166,9 @@ if (isset($_POST['register'])) {
         echo "<h3>Nilai anda : D</h3>";
     } elseif ($nilai <= 0.75 ){
         echo "<h3>Nilai anda : E</h3>";
-    }   
+    } else{
+      echo "<h3>Silahkan input angka</h3>";
+    } 
 }
 
 ?>
