@@ -150,7 +150,7 @@
 
 if (isset($_POST['register'])) {
     $nilai = $_POST ['nilai'];
-    if($nilai >= 3.75){
+    if($nilai >= 3.75 and $nilai <=4){
         echo "<h3>Nilai anda : A</h3>";
     }elseif ($nilai >= 3.24 and $nilai <= 3.74 ){
       echo "<h3>Nilai anda : B+</h3>";
