@@ -224,8 +224,7 @@ function display_login_form(){ ?>
                       >
                         Log In
                       </button>
-
-                      </div>
+                    </div>
                   </form>
                 </div>
               </div>
