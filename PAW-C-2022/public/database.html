@@ -200,3 +200,58 @@
           <img data-aos="zoom-in" src="img/database/output11.png">
       
         </div>
+
+        <div class="bg-white p-10 w-full">
+          <img data-aos="zoom-in" src="img/database/latihan12.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Kode program di atas merupakan kode program bahasa PHP untuk membuat objek baru yaitu PDO. interface universal yang disediakan PHP untuk “berkomunikasi” dengan database server. Maksud istilah “interface universal” disini adalah bahwa PDO tidak terikat dengan aplikasi database tertentu. Apabila saat ini kita menggunakan database MySQL dan dikemudian hari ingin bermigrasi menggunakan PostgreSQL, kita hanya tinggal mengganti cara pemanggilan awal PDO dan seluruh kode program yang ada bisa langsung digunakan untuk database baru. Contoh di atas merupakan implementasi PDO dengan database my MySQL. Dalam construct objek PDO, kita dapat melakukan input data yaitu host database yang kita miliki. Secara default, pada device kita memiliki dbhost yaitu localhost. Selanjutnya diikuti nama database yanng ingin dikoneksikan dengan catatan nama database yang diinputkan harus telah tersedia pada database MySQL. Untuk input selanjutnya diisi username serta password dari databaseyang kita miliki.</p>
+          <p data-aos="zoom-in"class="mt-5 text-justify">Kode program diatas akan mengambil data dari database student dengan menggunakan query SQL select dan FETCH_FUNC bawaan dari class atau objek PDO. Sesuai namanya, FETCH_FUNC berfungsi untuk mengembalikan nilai kmenggunakan function bawaan PDO.</p>
+          <img data-aos="zoom-in" src="img/database/output12.png">
+      
+        </div>
+
+        <div class="bg-white p-10 w-full">
+          <img data-aos="zoom-in" src="img/database/latihan13.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Kode program di atas bertujuan untuk mengganti atau mengubah isi data dari database student. Sebagai contoh sebelumnya database student memiliki salah satu anggota bernama Mohammad ilham Arkan. Kemudian menggunakan syntax di atas menggunakan query UPDATE untuk mengubah nama tersebut menjadi huruf kapital semua. Namun untuk mengubah nama juga harus mnenggunakan kata kunci yang unique seperti nim. Karena setiap mahasiswa memiliki nim yang berbeda maka nim dapat dijadikan katakunci untuk dilakukan perubahan dengan query perkondisian WHERE.</p>
+          <img data-aos="zoom-in" src="img/database/db13.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Ketika program bahasa PHP sebelumnya dijalankan, maka data nama dari Mohammad Ilham Arkan  berubah menjadi MOHAMMAD ILHAM ARKAN dengan menggunakan query SQL yang dikombinasikan dengan bahasa pemrograman PHP. Ketika terjadi perubahan pada salah satu field database student, maka web browser akan mengeluarkan angka 1 yang berarti true. Itu artinya salah satu data tersebut sukses dirubah.</p>
+          <img data-aos="zoom-in" src="img/database/output13.png">
+      
+        </div>
+
+
+        <div class="bg-white p-10 w-full">
+          <img data-aos="zoom-in" src="img/database/latihan14.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Kode program di atas bertujuan untuk menghapus salah satu data dari tabel database student. Sebagai contoh di atas ingin menghapus salah satu mahasiswa dengan nama Alfiyanto Ghani. Namun karena nama bukan menjadi field unik, maka nama tidak dapat dijadikan sebagai kolom pengkondisian. Karena terdapat NIM yang berbeda-beda pada tiap mahasiswa, maka NIM dapat digunakan sebagai pengkondisian SQL untuk menghapus data mahasiswa dari tabel student menggunakan  queri DELETE dan query WHERE sebagai pengkondisiannya.</p>
+          <img data-aos="zoom-in" src="img/database/db14.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Ketika program bahasa PHP sebelumnya dijalankan, maka data dari Alfiyanto Ghani akan terhapus dari database. Dan hal ini dibuktikan  dengan munculnya angka 1 pada halaman web browser yang berrati true. Itu artinya salah satu data dari tabel student telah berhasil dihapus.</p>
+          <img data-aos="zoom-in" src="img/database/output14.png">
+      
+        </div>
+
+        <div class="bg-white p-10 w-full">
+          <img data-aos="zoom-in" src="img/database/latihan14.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Kode program di atas bertujuan untuk menghapus salah satu data dari tabel database student. Sebagai contoh di atas ingin menghapus salah satu mahasiswa dengan nama Alfiyanto Ghani. Namun karena nama bukan menjadi field unik, maka nama tidak dapat dijadikan sebagai kolom pengkondisian. Karena terdapat NIM yang berbeda-beda pada tiap mahasiswa, maka NIM dapat digunakan sebagai pengkondisian SQL untuk menghapus data mahasiswa dari tabel student menggunakan  queri DELETE dan query WHERE sebagai pengkondisiannya.</p>
+          <img data-aos="zoom-in" src="img/database/db14.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Ketika program bahasa PHP sebelumnya dijalankan, maka data dari Alfiyanto Ghani akan terhapus dari database. Dan hal ini dibuktikan  dengan munculnya angka 1 pada halaman web browser yang berrati true. Itu artinya salah satu data dari tabel student telah berhasil dihapus. Di bawah ini merupakan output dari web browser dengan  kode program sebelumnya :</p>
+          <img data-aos="zoom-in" src="img/database/output14.png">
+      
+        </div>
+
+        <div class="bg-white p-10 w-full">
+          <img data-aos="zoom-in" src="img/database/latihan15.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Kode program di atas bertujuan untuk mmenambahkan data dari tabel database student. Sebagai contoh di atas ingin mmenambahkan kembali mahasiswa yang bernama Alifiyanto Ghani Wijaya dengan nim 215150707111015. Untuk menambahknan data baru diperlukan queri SQL yaitu INSERT INTO.</p>
+          <img data-aos="zoom-in" src="img/database/db15.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Ketika program bahasa PHP sebelumnya dijalankan, maka data dari Alfiyanto Ghani akan ditambahkan dari database. Dan hal ini dibuktikan  dengan munculnya angka 1 pada halaman web browser yang berati true. Itu artinya salah satu data dari tabel student telah berhasil dibuat. Di bawah ini merupakan output dari web browser dengan  kode program sebelumnya :</p>
+          <img data-aos="zoom-in" src="img/database/output15.png">
+      
+        </div>
+
+
+        <div class="bg-white p-10 w-full">
+          <img data-aos="zoom-in" src="img/database/latihan16.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Kode program di atas bertujuan untuk mmenambahkan data dari tabel database student. Sebagai contoh di atas ingin mmenambahkan  mahasiswa yang bernama Dimas Saputro dengan nim 215150700111028. Untuk menambahknan data baru diperlukan queri SQL yaitu INSERT INTO.</p>
+          <img data-aos="zoom-in" src="img/database/db16.png">
+          <p data-aos="zoom-in"class="mt-5 text-justify">Ketika program bahasa PHP sebelumnya dijalankan, maka data dari Dimas Saputro akan ditambahkan dari database. Dan hal ini dibuktikan  dengan munculnya angka 15 pada halaman web browser yang berarti panjang dari nim mahasiswa tersebut adalah 15 character. Hal tersebut terjadi karena akibat method lastinsertid(). Di bawah ini merupakan output dari web browser dengan  kode program sebelumnya :</p>
+          <img data-aos="zoom-in" src="img/database/output16.png">
+      
+        </div>
